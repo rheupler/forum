@@ -12,7 +12,6 @@ export default Ember.Component.extend({
         title: this.get('title'),
         author: this.get('author'),
         description: this.get('description'),
-        image: this.get('image'),
       };
       this.set('addNewPost', false),
       this.sendAction('save2', params);

@@ -30,7 +30,7 @@ body {
 
 .jumbotron {
   height: 400px;
-  /*background: url("/img/running.jpg");*/
+  background: url("/ask.jpg");
   background-size: cover;
   opacity: 0.9;
 }
