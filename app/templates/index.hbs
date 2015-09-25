@@ -1,0 +1,19 @@
+{{outlet}}
+
+<div class='jumbotron'>
+  <div id="front-page">
+    <h2>Get your questions answered</h2>
+    <h4>A community of over 7 billion people</h4>
+  </div>
+</div>
+<div id="new-post">
+  {{new-post save2="save3"}}
+</div>
+<div id="postings">
+  {{#each model as |post|}}
+  <hr>
+    {{post-tile post=post update="update" destroyPost="destroyPost"}}
+    <br>
+    <br>
+  {{/each}}
+</div>

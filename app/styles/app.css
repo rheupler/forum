@@ -1,0 +1,80 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+/*
+.author-name {
+  font-weight: 300;
+}
+
+.comment-name {
+  font-weight: 400;
+  font-size: 115%;
+}
+
+.comment {
+  font-weight: 300;
+}
+
+#front-page {
+  padding-right: 10%;
+  text-align: right;
+  color: white;
+}*/
+
+
+
+/*.nav {
+  padding-left: 35%;
+}*/
+
+
+.jumbotron {
+  height: 400px;
+  /*background: url("/img/running.jpg");*/
+  background-size: cover;
+  opacity: 0.9;
+}
+
+#postings {
+  text-align: center;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 200%;
+}
+
+
+#post {
+  text-align: center;
+}
+
+#new-post {
+  text-align: center;
+}
+
+
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/****RESPONSIVE CSS****/
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+{{outlet}}
+
+<div id="post">
+  <div class='col-md-12'>
+    <h1>{{model.title}}</h1><span class="author-name"> by {{model.author}}</span>
+    <p><img src= {{model.image}} /></p>
+    <h4>{{model.description}}</h4>
+    {{update-post post=model update="update" destroyPost="destroyPost"}}
+    <button class='btn btn-danger' {{action 'delete' model}}>Delete</button>
+    <br>
+    <hr>
+  <h1>Comments</h1>
+    {{#each model.comments as |comment|}}
+      <p><span class="comment-name">{{comment.name}}</span> <span class="comment">says {{comment.content}}</span></p>
+    {{/each}}
+    <hr>
+    {{new-comment post=model saveComment="saveComment"}}
+  </div>
+</div>
